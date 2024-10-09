@@ -1,6 +1,7 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
-  resources :questions#, onli: %i[index new edit create update destroy show]
+Rails.application.routes.draw do
+  resources :questions # , onli: %i[index new edit create update destroy show]
 
   # resources :questions, onli: [:ndex, :new, :edit, :create]
 
@@ -11,9 +12,7 @@ Rails.application.routes.draw do
   # get '/questions/:id/edit', to: 'questions#edit'
 
   # post '/questions', to: 'questions#create'
-  
 
-  
   root 'pages#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
